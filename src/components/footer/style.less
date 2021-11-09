@@ -1,0 +1,178 @@
+@import '../../assets/css/variables';
+
+.footer {
+  background-color: #111;
+  overflow: hidden;
+  padding: 52px 0 0;
+  .foot {
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 99px;
+    .item {
+      float: left;
+      overflow: hidden;
+      .tit {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1.4em;
+        overflow: hidden;
+        margin-bottom: 31px
+      }
+      .box {
+        overflow: hidden
+      }
+      a {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, .7);
+        line-height: 1.43em;
+        overflow: hidden;
+        margin-bottom: 17px;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+  }
+
+
+  .addr {
+    overflow: hidden;
+    padding-bottom: 29px;
+    border-bottom: 1px solid rgba(233, 233, 233, .2);
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      margin: -2px 21px 0 0;
+      width: 22px;
+      height: 22px;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -ms-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-repeat: no-repeat
+    }
+    .ll {
+      float: left;
+      overflow: hidden;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, .7);
+      line-height: 3.43em;
+      padding-top: 31px;
+      .tel i {
+        background-image: url(./iconl1.png);
+      }
+      .mail i {
+        background-image: url(./iconl2.png);
+      }
+    }
+
+    .rr {
+      float: right;
+      overflow: hidden
+    }
+    .qr {
+      width: 90px;
+      height: 90px;
+      display: block;
+      margin: 0 auto 9px;
+      img {
+        display: block;
+        width: 100%
+      }
+    }
+    .txt {
+      font-size: 10px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, .6);
+      line-height: 1.5em;
+      overflow: hidden;
+      text-align: center
+    }
+  }
+
+  .copy {
+    overflow: hidden;
+    height: 58px;
+    line-height: 58px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    //line-height: 58;
+    p{
+      line-height: 58px;
+    }
+    span {
+      padding-left: 60px;
+      i {
+        display: inline-block;
+        vertical-align: middle;
+        margin: -2px 7px 0 0;
+        width: 20px;
+        height: 20px;
+        background: url(./iconl3.png) center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover
+      }
+    }
+
+  }
+}
+
+
+.footer .foot .item .two div {
+  float: left;
+  margin-right: 85px
+}
+
+.footer .foot .item .two div:last-child {
+  margin-right: 0
+}
+
+//
+//.footer .addr
+//
+//.footer .addr
+//
+//.footer .addr .qr img {
+//  display: block;
+//  width: 100%
+//}
+//
+//.footer .addr
+
+body.grey {
+  background-color: #f9f9f9
+}
+
+@media (min-width: 100px) and (max-width: 799px) {
+  .header {
+    padding: 0;
+    margin: auto;
+    width: 100%;
+
+    .menu {
+      display: none;
+    }
+  }
+}
+
+

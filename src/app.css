@@ -1,0 +1,55 @@
+/*@import "~antd/dist/antd.min.css";*/
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1920px){
+  .container{
+    margin: 0 auto;
+    max-width: 1920px;
+  }
+  /*body{*/
+  /*  margin: 0 auto;*/
+  /*  width: 1920px;*/
+  /*}*/
+}
+
+@media (min-width: 1200px) and (max-width: 1920px){
+  .container{
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 799px) and (max-width: 1200px){
+  .container{
+    margin: 0 auto;
+    width: 100%;
+    /*max-width: 1920px;*/
+  }
+}
+
+
+@media (min-width: 0) and (max-width: 799px){
+  .container{
+    margin: auto;
+    width: 100%;
+    /*margin: 0 auto;*/
+    /*max-width: 1200px;*/
+  }
+}

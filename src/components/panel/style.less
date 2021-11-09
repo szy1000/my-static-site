@@ -1,0 +1,54 @@
+@import '../../assets/css/variables';
+
+.panel {
+  &-header {
+    &-title {
+      margin: 0;
+      padding: 30px 0;
+      position: relative;
+      font-size: 40px;
+      font-weight: 600;
+      color: #0C1A4B;
+      line-height: 56px;
+      text-align: center;
+      &:after {
+        position: absolute;
+        left: 50%;
+        margin-left: -37px;
+        bottom: 0;
+        content: '';
+        width: 74px;
+        height: 4px;
+        background-color: rgba(12, 26, 75, .3);
+      }
+    }
+
+    &-subTitle {
+      margin: 0 auto;
+      padding-top: 30px;
+      font-size: 16px;
+      //width: 1190px;
+      text-align: center;
+      font-weight: 400;
+      color: rgba(93, 98, 117, 1);
+      line-height: 30px;
+    }
+  }
+  &-content{
+    padding: 78px 0;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 799px) {
+  //.header {
+  //  padding: 0;
+  //  margin: auto;
+  //  width: 100%;
+  //
+  //  .menu {
+  //    display: none;
+  //  }
+  //}
+}
+
+

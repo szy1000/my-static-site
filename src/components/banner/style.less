@@ -1,0 +1,57 @@
+@import '../../assets/css/variables.less';
+
+.banner {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: @primary-color;
+
+  &-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-aside {
+    &-title {
+      font-size: 40px;
+      font-weight: 600;
+      //color: @primary-color;
+    }
+
+    &-more {
+      display: flex;
+      align-items: center;
+      //width: 64px;
+      height: 22px;
+      font-size: 16px;
+      font-weight: 400;
+      color: @primary-color;
+      line-height: 22px;
+      transition: 300ms;
+
+      .icon {
+        margin-left: 16px;
+        width: 20px;
+        height: 7px;
+        background-image: url("./more.png");
+        background-size: cover;
+        transition: 300ms;
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: @active-color;
+        .icon {
+          transform: translateX(10px);
+          //background-image: url("./@{active-color}.png");
+          background-image: url("./FF9D13.png");
+        }
+      }
+
+    }
+  }
+}
+
