@@ -6,6 +6,9 @@ export default {
   getSiteProps: () => ({
     title: 'ss'
   }),
+  devServer: {
+    port: 9000
+  },
   getRoutes: async () => {
     const { data: posts } = await axios.get(
       'https://jsonplaceholder.typicode.com/posts'
@@ -36,17 +39,20 @@ export default {
   },
   plugins: [
 
-    // [
-    //   "react-static-plugin-css-modules", {
-    //     modules: true, // set true by default
-    //     localIdentName: '[path][name]__[local]--[hash:base64:5]',
-    //   }
-    // ],
     [
       "react-static-plugin-less", {
 
+      }
+    ],
+    [
+      "react-static-plugin-css-modules", {
+      modules: true, // set true by default
+      localIdentName: '[path][name]__[local]--[hash:base64:5]',
     }
     ],
+    ['react-static-plugin-styled-components'],
+
+
     [
       require.resolve('react-static-plugin-source-filesystem'),
       {
