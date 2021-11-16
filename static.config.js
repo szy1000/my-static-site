@@ -7,6 +7,7 @@ export default {
     title: 'ss'
   }),
   devServer: {
+    host: '127.0.0.1',
     port: 9000
   },
   getRoutes: async () => {
